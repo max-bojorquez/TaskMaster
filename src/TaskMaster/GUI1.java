@@ -1,6 +1,7 @@
 package TaskMaster;
 
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class GUI1 extends BorderPane{
 		this.taskList = list;
 		a = new GUI1ButtonsandListPane(list);
 		this.setCenter(a);
-		this.setAlignment(a,Pos.CENTER);
+		this.setTop(new Label("hey"));
 	}
 	
 	//Missing Listeners
